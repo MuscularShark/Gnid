@@ -1,0 +1,533 @@
+@import "et-line.css";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:15px;
+	color: #777777;
+	line-height: 26px;
+}
+
+.page{
+	position: relative;
+	overflow: hidden;
+}
+
+/*---------Header----------*/
+header a{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.site-header{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 25px 15px;
+	z-index: 9999;
+}
+
+.site-logo img{
+	width: auto;
+	height: auto;
+}
+
+.site-logo a{
+	border-bottom: 1px solid;
+}
+
+.header-inner{
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-list{
+	list-style: none;
+}
+.nav-list a:hover{
+	opacity: 0.5;
+}
+
+.logo-span{
+	font-size: 15px;
+}
+
+.site-navigation{
+	padding-top: 10px;
+}
+/*---------Header----------*/
+
+/*------All-font-style*/
+blockquote{
+	font-size:18px;
+	padding-bottom: 15px;
+	line-height: 38px;
+}
+
+h1,
+h2,
+h3,
+h5{
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+}
+h1{
+	margin-top: 50px;
+	font-size: 20px;
+	opacity: 0.9;
+}
+
+h2{
+	font-size: 15px;
+	color: black;
+	text-align: center;
+}
+
+h3{
+	font-size: 17px;
+	letter-spacing: 0.3em;
+	color: #777777;
+}
+
+h4{
+	font-size:15px;
+	color: #fff;
+	opacity: 0.6;
+}
+
+p{
+	line-height: 26px;
+}
+
+span{
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+}
+
+.fon-3-1{
+	color: #fff;
+	opacity: 0.7;
+	text-align: left;
+}
+/*------All-font-style*/
+
+/*---------Sections---------*/
+.section-md{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section-1{
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 70px;
+	background-image: url(../images/back.jpg); 
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	text-align: center;
+}
+
+.section-1 h1 + h4{
+	margin-top: 40px;
+}
+
+.section-3  span + h3{
+	margin-top: 20px;
+}
+
+.section-3-1  h2 + p{
+	margin-top: 20px;
+}
+
+.section-2{
+	border-bottom: 2px solid rgba(13, 13, 13, 0.08);
+}
+
+.section-2 h2{
+	text-align: left;
+}
+/*---------Sections---------*/
+
+/*---------All-section1---------*/
+.scroll{
+	position: absolute;
+	color: black;
+	text-decoration: none;
+	bottom: 5%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 2px;
+	transform: rotate(45deg);
+}
+
+.scroll i{
+	color: #111;
+	font-size: 15px;
+	transform: rotate(-45deg);
+	padding-left: 5px;
+}
+/*---------All-section1---------*/
+
+/*---------All-section2---------*/
+.about-art{
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+.artist{
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.member-art{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.member-art img{
+	width: 100%;
+	height: auto;
+}
+/*---------All-section2---------*/
+
+/*---------All-section3---------*/
+.dark{
+	background-color: #111111;
+}
+
+.icons{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	justify-content: space-around;
+	list-style: none;
+	font-size: 48px;
+	text-align: center;
+}
+
+.mini-ct{
+	padding-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.left-3-1 a{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: black;
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #fff; 	
+	padding: 10px 40px;
+	border-radius: 2px;
+	transition: 0.5s;
+}
+
+.left-3-1 a:hover{
+	background-color: #e2e2e2; 
+}
+
+.left-3-1 {
+	padding-bottom: 50px;
+}
+
+.left-3-1 p{
+	margin-bottom: 40px;
+}
+
+.left-3-1 h2{
+	letter-spacing: 0.3em;
+}
+
+.mak{
+	position: relative;
+}
+
+.makbook img{
+	width: 100%;
+	height: auto;
+}
+
+.display{
+	position: absolute;
+	top: 0px;
+	left: 9%;
+	width: 82%;
+	height: 70%;
+	background-color: white;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-image: url(../images/page.jpg); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	transition: 3s;
+}
+
+.display:hover{
+	background-position: 0px 100%;
+	transition: 10s;
+}
+/*---------All-section3---------*/
+
+/*---------Offsets---------*/
+.offset{
+	margin-top: 70px;
+}
+
+.offset-135-125{
+	padding-top: 70px; 
+}
+
+.offset-second{
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+
+.offset-third{
+	padding-top: 120px;
+	padding-bottom: 40px;
+}
+
+.offset-third-1{
+	padding-top: 120px;
+}
+
+.offset-drk{
+	padding-bottom: 168px;
+}
+/*---------Offsets---------*/
+
+/*----------Grid------------*/
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.col-12{
+	width: 100%;
+}
+
+.row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+[class*='col-'] {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+/*---------Grid-------------*/
+
+/*---------Media------------*/
+
+@media (min-width: 576px) {
+	h1{
+		margin-top: 0px;
+		font-size: 20px;
+		letter-spacing: 1.5em;
+	}
+
+	.member-span,
+	.logo-span,
+	{
+		font-size: 15px;
+	}
+
+	.member-art img{
+		padding-bottom: 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.display{
+		margin-top: -20px;
+		height: 80%;
+
+	}
+
+	.makbook img{
+		margin-top: -40px;
+	}
+
+	.logo-span{
+		font-size: 11px;
+	}
+
+	.header-inner{
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	
+	.site-navigation{
+		padding-top: 0px;
+	}
+
+	.nav-list{
+		display: flex;
+		flex-direction: row;
+	}
+	.nav-list a{
+		padding-left: 40px;
+		font-size: 12px;
+	}
+	.offset-135-125{
+		padding-top: 70px;
+	} 
+
+	.member-art img{
+		width: auto;
+	}
+
+	.col-1-3 {
+		width: 33.33%;
+	}
+
+	.col-12{
+		width: 100%;
+	}
+
+	.col-1-2{
+		width: 50%;
+	}
+
+	h2{
+		font-size: 19px;
+	}
+
+	h3{
+		font-size: 15px;
+	}
+
+	.member-span{ 
+		font-size: 12px;
+	}
+	
+	blockquote{
+		font-size:16px;
+		padding-bottom: 15px;
+	}
+
+	.artist{
+		font-size: 11px;
+	}
+
+	.offset-135-125{
+		padding-top: 135px; 
+	}
+}
+
+@media (min-width: 992px) {
+	.display{
+		margin-top: -125px;
+		height: 100%;
+	}
+
+	.makbook img{
+		margin-top: -150px;
+	}
+
+	.member-art img{
+		width: 100%;
+		
+	}
+	
+	.col-1-2{
+		width: 50%;
+	}
+
+	.col-1-3{
+		width: 33.33%;
+	}
+	
+
+	h1{
+		font-size: 25px;
+		letter-spacing: 1.5em;
+	}
+}
+
+@media (min-width: 1200px) {
+	h1{
+		font-size: 30px;
+		letter-spacing: 1.7em;
+	}
+
+	h4{
+		font-size: 19px;
+	}
+	
+	.section-1 h1 + h4{
+		margin-top: 100px;
+	}
+	blockquote{  
+		font-size:24px;
+		line-height: 38px;
+	}
+
+	h2{
+		font-size: 18px;
+		letter-spacing: 0.5em; 
+	}
+}
+
+/*---------Media------------*/
+
+
+
