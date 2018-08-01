@@ -89,6 +89,7 @@ header a{
 }
 /*---------Header----------*/
 
+
 /*------All-font-style*/
 blockquote{
 	font-size:18px;
@@ -143,7 +144,12 @@ span{
 	opacity: 0.7;
 	text-align: left;
 }
+
+.text-center{
+	text-align: center;
+}
 /*------All-font-style*/
+
 
 /*---------Sections---------*/
 .section-md{
@@ -185,6 +191,7 @@ span{
 }
 /*---------Sections---------*/
 
+
 /*---------All-section1---------*/
 .scroll{
 	position: absolute;
@@ -207,6 +214,7 @@ span{
 }
 /*---------All-section1---------*/
 
+
 /*---------All-section2---------*/
 .about-art{
 	text-align: left;
@@ -228,6 +236,7 @@ span{
 	height: auto;
 }
 /*---------All-section2---------*/
+
 
 /*---------All-section3---------*/
 .dark{
@@ -312,6 +321,43 @@ span{
 }
 /*---------All-section3---------*/
 
+
+/*---------All-section4---------*/
+.info-70{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #777777;
+}
+ .button{
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	opacity: 0.5;
+	background-color: transparent;
+	border: 0; 
+	cursor: pointer;
+}
+ .button:focus{
+	outline: none;
+}
+ .is-checked{
+	padding-bottom: 20px;
+	padding-top: 10px;
+	opacity: 1;
+}
+ .button-group{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*---------All-section4---------*/
+
+
 /*---------Offsets---------*/
 .offset{
 	margin-top: 70px;
@@ -337,6 +383,10 @@ span{
 
 .offset-drk{
 	padding-bottom: 168px;
+}
+
+.offset-btn{
+	padding-bottom: 50px;
 }
 /*---------Offsets---------*/
 
@@ -375,8 +425,9 @@ span{
 }
 /*---------Grid-------------*/
 
-/*---------Media------------*/
 
+/*---------Media------------*/
+/*----------------------------576----------------------------*/
 @media (min-width: 576px) {
 	h1{
 		margin-top: 0px;
@@ -393,8 +444,15 @@ span{
 	.member-art img{
 		padding-bottom: 15px;
 	}
+	.button-group{
+		flex-direction: row;
+	}
+ 	.is-checked{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
 }
-
+/*----------------------------768----------------------------*/
 @media (min-width: 768px) {
 	.display{
 		margin-top: -20px;
@@ -471,8 +529,9 @@ span{
 	.offset-135-125{
 		padding-top: 135px; 
 	}
-}
 
+}
+/*----------------------------992----------------------------*/
 @media (min-width: 992px) {
 	.display{
 		margin-top: -125px;
@@ -501,8 +560,12 @@ span{
 		font-size: 25px;
 		letter-spacing: 1.5em;
 	}
-}
 
+	.button-group{
+		justify-content: space-between;
+	}
+}
+/*----------------------------1200----------------------------*/
 @media (min-width: 1200px) {
 	h1{
 		font-size: 30px;
@@ -529,5 +592,32 @@ span{
 
 /*---------Media------------*/
 
+/*--------Isotope-----------*/
+ .grid{
+	display: flex;
+	flex-wrap: wrap;
+}
+ .grid-item img{
+	width: 100%;
+}
+.grid-item{
+	width: 100%;
+	filter: grayscale(1);
+	transition: 0.2s;
+}
+ @media ( min-width: 576px ){
+	.grid-item{
+		width: 50%;
+	}
+}
+ @media ( min-width: 992px ){
+	.grid-item{
+		width: 33.3334%;
+	}
+}
+ .grid-item:hover{
+	filter: grayscale(0);
+}
+ /*--------Isotope-----------*/
 
 
