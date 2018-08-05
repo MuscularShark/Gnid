@@ -365,15 +365,11 @@ span{
 	background-color: transparent;
 	border: 0; 
 	cursor: pointer;
-}
-
- .button:focus{
 	outline: none;
+	margin-bottom: 10px;
 }
 
  .is-checked{
-	padding-bottom: 20px;
-	padding-top: 10px;
 	opacity: 1;
 }
 
@@ -479,7 +475,7 @@ span{
 
 .offset-140{
 	padding-top: 140px;
-	padding-bottom: 140px;
+	padding-bottom: 70px;
 }
 /*---------Offsets---------*/
 
@@ -551,6 +547,10 @@ span{
 		margin-top: -20px;
 		height: 80%;
 
+	}
+	
+	.offset-140{
+		padding-bottom: 140px;
 	}
 
 	.makbook img{
@@ -752,7 +752,7 @@ span{
 	content: '';
 	position: absolute;
 	top: -50%;
-	left: -25px;
+	left: -30px;
 	width: 50px;
 	height: 50px;
 	background-color: #fff;
@@ -770,7 +770,7 @@ span{
 	content: '';
 	position: absolute;
 	top: -50%;
-	right: -25px;
+	right: -30px;
 	width: 50px;
 	height: 50px;
 	background-color: #fff;
@@ -778,7 +778,23 @@ span{
 	transform: rotate(45deg);
 }
 
-/*Знаю,что плохой код,но по другому только через джс перебивать*/
+.owl-next span {
+	position: absolute;
+    color: black;
+    margin-left: -9px;
+    margin-top: 8px;
+    font-size: 25px;
+}
+
+.owl-prev span {
+	position: absolute;
+    color: black;
+    margin-left: 5px;
+    margin-top: 8px;
+    font-size: 25px;
+}
+
+
 .owl-dot{
 	background: #fff!important;
 	border:1px solid white;
@@ -794,4 +810,8 @@ span{
 }
 /*-------Owl-carousel--------*/
 
-
+/*----------------map----------------*/
+.map{
+	height: 400px;
+	width: 100%;
+}
