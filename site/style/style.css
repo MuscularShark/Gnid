@@ -114,7 +114,6 @@ h1{
 
 h2{
 	font-size: 15px;
-	color: black;
 	text-align: center;
 }
 
@@ -139,14 +138,28 @@ span{
 	letter-spacing: 0.4em;
 }
 
-.fon-3-1{
-	color: #fff;
-	opacity: 0.7;
-	text-align: left;
-}
-
 .text-center{
 	text-align: center;
+}
+
+.dark{
+	background-color: #111111;
+}
+
+.white{
+	color: white;
+}
+
+.black{
+	color: black;
+}
+
+.invert q{
+   opacity: 0.7;
+}
+
+.invert cite{
+	opacity: 0.3;
 }
 /*------All-font-style*/
 
@@ -174,11 +187,11 @@ span{
 	margin-top: 40px;
 }
 
-.section-3  span + h3{
+.section-3 span + h3{
 	margin-top: 20px;
 }
 
-.section-3-1  h2 + p{
+.section-3-1 h2 + p{
 	margin-top: 20px;
 }
 
@@ -188,6 +201,15 @@ span{
 
 .section-2 h2{
 	text-align: left;
+}
+
+.section-5 h2{
+	padding-bottom: 25px;
+	letter-spacing: 0.3em;
+}
+
+.section-7 q + cite{
+	margin-top: 30px;
 }
 /*---------Sections---------*/
 
@@ -239,9 +261,6 @@ span{
 
 
 /*---------All-section3---------*/
-.dark{
-	background-color: #111111;
-}
 
 .icons{
 	display: flex;
@@ -259,7 +278,7 @@ span{
 	padding-right: 15px;
 }
 
-.left-3-1 a{
+.btn-drk{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color: black;
@@ -268,14 +287,18 @@ span{
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	text-decoration: none;
-	background-color: #fff; 	
+	background-color: #cfcfcf; 	
 	padding: 10px 40px;
+	border: 1px solid;
+	border-color: transparent;
 	border-radius: 2px;
 	transition: 0.5s;
 }
 
-.left-3-1 a:hover{
-	background-color: #e2e2e2; 
+.btn-drk:hover{
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff; 
 }
 
 .left-3-1 {
@@ -284,10 +307,13 @@ span{
 
 .left-3-1 p{
 	margin-bottom: 40px;
+	opacity: 0.7;
+	text-align: left;
 }
 
 .left-3-1 h2{
 	letter-spacing: 0.3em;
+	text-align: left;
 }
 
 .mak{
@@ -329,6 +355,7 @@ span{
 	margin-right: auto;
 	color: #777777;
 }
+
  .button{
 	font-family: 'Dosis', sans-serif;
 	font-weight: 400;
@@ -339,14 +366,17 @@ span{
 	border: 0; 
 	cursor: pointer;
 }
+
  .button:focus{
 	outline: none;
 }
+
  .is-checked{
 	padding-bottom: 20px;
 	padding-top: 10px;
 	opacity: 1;
 }
+
  .button-group{
 	display: flex;
 	flex-direction: column;
@@ -357,10 +387,68 @@ span{
 }
 /*---------All-section4---------*/
 
+/*---------All-section6---------*/
+.choose{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+
+.choose span{
+	font-size: 50px;
+} 
+
+.choose span + h3{
+	margin-top: 35px;
+}
+
+.choose h3 + p{
+	margin-top: 35px;
+}
+
+.choose p{
+	text-align: left;
+	color: #777777;
+}
+
+.choose h3{
+	color: #000;
+	letter-spacing: 0.4em;
+}
+
+/*---------All-section6---------*/
+
+/*---------All-section7---------*/
+
+.section-7 span[class*="icon"]{
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+/*---------All-section7---------*/
+
 
 /*---------Offsets---------*/
 .offset{
 	margin-top: 70px;
+}
+
+.offset-1{
+	margin-top: 40px;
+}
+
+.offset-carousel{
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+
+.offset-80{
+	margin-top: 80px;
+}
+
+.offset-5{
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .offset-135-125{
@@ -387,6 +475,11 @@ span{
 
 .offset-btn{
 	padding-bottom: 50px;
+}
+
+.offset-140{
+	padding-top: 140px;
+	padding-bottom: 140px;
 }
 /*---------Offsets---------*/
 
@@ -603,7 +696,7 @@ span{
 .grid-item{
 	width: 100%;
 	filter: grayscale(1);
-	transition: 0.2s;
+	transition: 0.3s;
 }
  @media ( min-width: 576px ){
 	.grid-item{
@@ -619,5 +712,86 @@ span{
 	filter: grayscale(0);
 }
  /*--------Isotope-----------*/
+
+/*-------Owl-carousel--------*/
+.owl-item-inner{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 90%;
+}
+
+@media ( min-width: 1200px ){
+		.owl-item-inner{
+			width: 40%;
+		}
+}
+
+.owl-carousel blockquote{
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.owl-carousel cite{
+	letter-spacing: 0.2em;
+	font-size: 11px;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 50px;
+}
+
+.owl-prev{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.owl-prev:before{
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -25px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 2px;
+	transform: rotate(45deg);
+}
+
+.owl-next{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.owl-next:before{
+	content: '';
+	position: absolute;
+	top: -50%;
+	right: -25px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 2px;
+	transform: rotate(45deg);
+}
+
+/*Знаю,что плохой код,но по другому только через джс перебивать*/
+.owl-dot{
+	background: #fff!important;
+	border:1px solid white;
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	border-radius:50%;
+}
+
+.owl-dot + .active{
+	background: transparent!important;
+	border: 1px solid white!important;
+}
+/*-------Owl-carousel--------*/
 
 

@@ -9,3 +9,12 @@ var $grid = $('.grid').isotope({
 	var filterValue = $(this).attr('data-filter');
 	$grid.isotope({filter: filterValue});
 }) 
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+  	items: 1,
+  	nav: true,
+  	loop: true,
+  	dots: true
+  });
+});
