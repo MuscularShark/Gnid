@@ -574,7 +574,7 @@ input, textarea{
 .filter{
 	text-align: center;
 	filter: grayscale(0.8);
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .filter:hover{
@@ -671,6 +671,12 @@ input, textarea{
 .row-offset-2{
 	margin-right: 1%;
 	margin-left: 1%;
+	margin-bottom: 10px;
+}
+
+.offset-footer{
+	padding-top: 120px;
+	padding-bottom: 60px;
 }
 
 /*---------Offsets---------*/
@@ -1117,4 +1123,38 @@ input, textarea{
 	transform: rotate(-45deg);
 	color: black;
 
+}
+
+
+footer{
+	background-color: #f8f8f8;
+}
+
+.footer-inner .icon-contacts{
+	background-color: transparent;
+	border: 1px solid black; 
+	color: black;
+	margin-left: 8px;
+	margin-right: 8px;
+	transition: 0.3s;
+	border-radius: 0px;
+}
+
+.footer-inner .icon-contacts:hover{
+	background-color: black;
+	color: white; 
+}
+
+.social{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 100px;
+}
+
+.footer-inner h5{
+	font-size: 12px;
+}
+.footer-inner p{
+	font-size: 11px;
 }
