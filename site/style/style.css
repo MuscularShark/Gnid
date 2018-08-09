@@ -143,13 +143,29 @@ dt{
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
 	color: #777777;
-	text-align: left;
 }
 
 dd{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: #444444;
+}
+
+input, textarea{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	line-height: 26px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	border: 1px solid #e5e5e5;
+}
+
+.info-span{
+	letter-spacing: 0;
+	font-size: 11px;
+	text-transform: none;
 }
 
 .text-center{
@@ -224,6 +240,20 @@ dd{
 
 .section-7 q + cite{
 	margin-top: 30px;
+}
+
+.section-10 span + p{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.section-10 img + h5{
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.section-11, .section-9 i + span{
+	margin-left: 5px;
 }
 /*---------Sections---------*/
 
@@ -441,8 +471,9 @@ dd{
 
 
 .contact{
-	display: flex;
-   justify-content: center;
+	display: flex; 
+   justify-content: flex-end;
+   flex-direction: column;
    margin-bottom: 10px;
 }
 
@@ -453,6 +484,8 @@ dd{
 	transform: rotate(45deg);
 	border-radius: 3px;
 	margin-top: 17px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .icon-contacts i{
@@ -462,29 +495,25 @@ dd{
 }
 
 .section-9 address{
-	margin-left: 15px;
+	margin-left: 10px;
+	
 }
 
-.form-contact input, textarea{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
-	letter-spacing: 0.2em;
-	line-height: 26px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-	padding-left: 10px;
-}
-
-.form-contact .submit{
+ .submit{
 	background: black;
 	border: 1px solid transparent;
 	border-radius: 2px;
-	padding-left: 2%;
-	padding-right: 2%;
-	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-.form-contact .submit:hover{
+.radius{
+	border-radius: 2px;
+}
+
+
+
+.submit:hover{
 	border-color: black;
 	background-color: grey;
 }
@@ -500,6 +529,64 @@ dd{
 
 /*---------All-section9---------*/
 
+/*---------All-section10---------*/
+.news-inner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.news-inner a{
+	text-decoration: none;
+	font-family: 'Dosis',sans-serif;
+	color: #999999;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 0.2em;
+	transition: 0.3s;
+}
+
+.news-inner a:hover{
+	color: black;
+	letter-spacing: 0.4em;
+}
+
+.news-btn{
+	border: 1px solid transparent;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-color: rgba(0,0,0, 0.1);
+	text-decoration: none;
+	color: #777777;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 0.2em;
+	border-radius: 2px;
+}
+
+.news-btn:hover{
+	background-color: black;
+	color: white; 
+}
+
+.filter{
+	text-align: center;
+	filter: grayscale(0.8);
+	margin-bottom: 15px;
+}
+
+.filter:hover{
+	filter: grayscale(0);
+}
+/*---------All-section10---------*/
+
+/*---------All-section11---------*/
+.section-11{
+	background-color: #f8f8f8;
+}
+/*---------All-section11---------*/
 
 /*---------Offsets---------*/
 .offset{
@@ -517,6 +604,16 @@ dd{
 
 .offset-80{
 	margin-top: 80px;
+}
+
+.offset-20-20{
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
+.offset-80-80{
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 .offset-5{
@@ -555,18 +652,20 @@ dd{
 	padding-bottom: 70px;
 }
 
-.offset-140b{
+.offset-140-140{
+	padding-top: 140px;
 	padding-bottom: 140px;
 }
 
 .offset-100-80{
-	padding-top: 120px;
+	padding-top: 80px;
 	padding-bottom: 120px;
 }
 
 .row-offset{
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 28%;
+	margin-right: 25%;
+
 }
 
 .row-offset-2{
@@ -598,6 +697,12 @@ dd{
 	float: left;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.row-offset{
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .row:after {
@@ -703,6 +808,10 @@ dd{
 		font-size: 15px;
 	}
 
+	dl{
+		text-align: left;
+	}
+
 	dt{
 		font-size: 12px;
 	}
@@ -722,6 +831,20 @@ dd{
 
 	.offset-135-125{
 		padding-top: 135px; 
+	}
+
+	.contact{
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.icon-contacts{
+		margin-left: 5%;
+		margin-right: 0;
+	}
+
+	.offset-100-80{
+	padding-top: 120px;
 	}
 
 	.mark{
@@ -770,6 +893,10 @@ dd{
 		justify-content: space-between;
 	}
 
+	.filter{
+		text-align: left;
+	}
+
 }
 /*----------------------------1200----------------------------*/
 @media (min-width: 1200px) {
@@ -796,8 +923,7 @@ dd{
 	}
 
 	.form-contact .submit{
-		width: 50%;
-		margin-left: 50%;
+		margin-left: 45%;
 	}
 }
 
