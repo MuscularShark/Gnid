@@ -157,8 +157,8 @@ input, textarea{
 	letter-spacing: 0.2em;
 	line-height: 26px;
 	text-transform: uppercase;
-	margin-bottom: 10px;
 	padding-left: 10px;
+	margin-bottom: 10px;
 	border: 1px solid #e5e5e5;
 }
 
@@ -481,6 +481,11 @@ input, textarea{
    margin-bottom: 10px;
 }
 
+.contact a{
+	text-decoration: none;
+	color: #444444;
+}
+
 .icon-contacts{
 	width: 25px;
 	height: 25px;
@@ -577,7 +582,7 @@ input, textarea{
 .filter{
 	text-align: center;
 	filter: grayscale(0.8);
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 }
 
 .filter:hover{
@@ -1149,7 +1154,7 @@ footer{
 	margin-left: 8px;
 	margin-right: 8px;
 	transition: 0.3s;
-	border-radius: 0px;
+
 }
 
 .footer-inner .icon-contacts i{
@@ -1179,8 +1184,6 @@ footer{
 
 
 /*btn-totop*/
-
-
 
 .totop-button{
 	position: fixed;
